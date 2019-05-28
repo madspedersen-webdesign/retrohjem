@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Velkommen til Retrohjem</title>
+    <meta name="description" content="Retrohjem sælger retro møbler fra 50'erne, 60'erne og 70'erne | Stort udvalg af smukke genbrugsmøbler, dansk design og brugskunst - Se vores møbler HER!">
+    <link rel="stylesheet" href="css/joachim.css">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Round|Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section id="preheader">
+        <section id="logo-burger">
+            <a id="logo" href="index.html"><img src="logo.png" alt="logo"></a>
+            <label for="toggle">
+                <div id="nav-icon3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+        </section>
+    </section>
+    <ul id="desktop-menu">
+        <a href="index.html"><img src="images/retrohjem_logo2.png" alt="Retrohjems logo" id="rhlogo"></a>
+        <li><a href="dbo.html">DØDSBO OG INDBO</a></li>
+        <div class="dropdown">
+            <a href="produkt.html">
+                <div class="dropbtn">PRODUKTER</div>
+            </a>
+            <ul class="dropdown-content">
+                <li><a href="produkt.html"><img src="images/alt.png" alt="ikon for alle produkter">Alle Produkter</a></li>
+                <li><a href="Stol.html"><img src="images/stol.png" alt="ikon af en stol">Stole</a></li>
+                <li><a href="" class="sofa"><img src="images/sofa.png" alt="ikon af en sofa" id="sofa">Sofaer</a></li>
+                <li><a href=""><img src="images/bord.png" alt="ikon af en skænk">Skænke</a></li>
+                <li><a href=""><img src="images/lampe.png" alt="Ikon af en lampe">Lamper</a></li>
+            </ul>
+        </div>
+
+        <li><a href="hashtag.html">INSPIRATION</a></li>
+        <li><a href="kontakt.html">KONTAKT</a></li>
+    </ul>
+    <header>
+        <nav>
+            <input type="checkbox" id="toggle" class="hidden">
+            <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
+            <ul id="main-nav">
+                <a href="index.html"><img src="images/retrohjem_logo2.png" alt="Retrohjems logo" id="rhlogo"></a>
+                <li><a href="dbo.html">DØDSBO OG INDBO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="produkt.html">PRODUKTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="hashtag.html">INSPIRATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="kontakt.html">KONTAKT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <section id="some">
+                    <a href="https://www.instagram.com/retrohjem.dk/"><img src="images/instagram.png" alt="Instagram logo"></a>
+                    <a href="https://www.facebook.com/retrohjem.dk/"><img src="images/facebook.png" alt="Facebook logo"></a>
+                </section>
+            </ul>
+        </nav>
+    </header>
+
+
+    <img class="mobile" src="images/forside-mobile.jpg" alt="forsiden til mobilen">
+    <img class="laptop" src="images/forside-laptop.jpg" alt="forsiden til laptop">
+
+    <section class="text1">
+        <h2>
+            Retrohjem på sociale medier
+
+        </h2>
+        <p>
+            På Retrohjem ligger vi alle vores nye møbler op på instagram. Det er den nemmeste måde at holde alle opdateret. Ligeledes er vi også i tæt kontakt med vores kære kunder.
+            <br><br>
+            Så gå endelig ind og følg os både på Instagram og Facebook og bliv en del af vores fantastiske fælleskab.
+            Så du kan være opdateret med alle de nye og spændende retromøbler vi får hjem løbende.
+        </p>
+    </section>
+
+    <div id="knap">
+        <a href="hashtag.html">Få inspiration</a> </div>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-8d44a013-5e87-464f-b990-4c97f580b8e9"></div>
+
+    <div class="footer">
+        <p>©Copyright - Retrohjem 2015</p>
+        <p>Marsk Stigsvej 6 8800 Viborg, Danmark</p>
+        <p>Handelsbetingelser</p>
+        <p>Kontakt os</p>
+    </div>
+
+    <div>
+        <img class="ig" src="images/ig.png" alt="IG ikon">
+        <img class="fb" src="images/fb.png" alt="FB ikon">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#nav-icon3').click(function() {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

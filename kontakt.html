@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Kontakt Retrohjem her</title>
+    <meta name="description" content="Kontaktside for Retrohjem Viborg med åbningstider, kontaktinformationer og adresse">
+    <link rel="stylesheet" href="css/asger.css">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Round|Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section id="preheader">
+        <section id="logo-burger">
+            <a id="logo" href="index.html"><img src="logo.png" alt="logo"></a>
+            <label for="toggle">
+                <div id="nav-icon3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+        </section>
+
+    </section>
+    <ul id="desktop-menu">
+        <a href="index.html"><img src="images/retrohjem_logo2.png" alt="Retrohjems logo" id="rhlogo"></a>'
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="dbo.html">DØDSBO OG INDBO</a></li>
+        <div class="dropdown">
+            <a href="produkt.html">
+                <div class="dropbtn">PRODUKTER</div>
+            </a>
+            <ul class="dropdown-content">
+                <li><a href="produkt.html"><img src="images/alt.png" alt="ikon for alle produkter">Alle Produkter</a></li>
+                <li><a href=""><img src="images/stol.png" alt="ikon af en stol">Stole</a></li>
+                <li><a href="" class="sofa"><img src="images/sofa.png" alt="ikon af en sofa" id="sofa">Sofaer</a></li>
+                <li><a href=""><img src="images/bord.png" alt="ikon af en skænk">Skænke</a></li>
+                <li><a href=""><img src="images/lampe.png" alt="Ikon af en lampe">Lamper</a></li>
+            </ul>
+        </div>
+
+        <li><a href="hashtag.html">INSPIRATION</a></li>
+        <li><a href="kontakt.html">KONTAKT</a></li>
+    </ul>
+    <header>
+        <nav>
+            <input type="checkbox" id="toggle" class="hidden">
+            <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
+            <ul id="main-nav">
+                <a href="index.html"><img src="images/retrohjem_logo2.png" alt="Retrohjems logo" id="rhlogo"></a>
+                <li><a href="dbo.html">DØDSBO OG INDBO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="produkt.html">PRODUKTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="hashtag.html">INSPIRATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="kontakt.html">KONTAKT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <section id="some">
+                    <a href="https://www.instagram.com/retrohjem.dk/"><img src="images/instagram.png" alt="Instagram logo"></a>
+                    <a href="https://www.facebook.com/retrohjem.dk/"><img src="images/facebook.png" alt="Facebook logo"></a>
+                </section>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <aside>
+            <h1 class="kontakt">
+
+                Kontakt os
+
+            </h1>
+
+            <img class="maiken" src="images/maiken2.jpg" alt="maiken">
+
+            <img class="maiken2" alt="maiken" src="images/maiken1.jpg">
+
+            <div class="farve">
+
+                <div class="flex">
+                    <h3 class="info">
+                        Telefon: 27 20 46 97
+                        <br>Mail: mail@retrohjem.dk
+                    </h3>
+
+                    <h3 class="info1">
+                        Åbningstider: </h3>
+                    <h4 class="info2">
+                        <br>Torsdage 13:00 – 17:30<br>
+                        <br>lørdage 10:00 – 14:00
+                    </h4>
+
+                    <h3 class="adresse">
+                        Adresse:
+                    </h3>
+
+                    <h4 class="adresse2">
+                        Marsk Stigsvej 6 8800 Viborg, Danmark
+                    </h4>
+                </div>
+            </div>
+        </aside>
+
+        <img class="googlemap" src="images/googlemap.png" alt="goolgemap">
+
+        <footer class="footer">
+            <p>©Copyright - Retrohjem 2015</p>
+            <p>Marsk Stigsvej 6 8800 Viborg, Danmark</p>
+            <p>Handelsbetingelser</p>
+            <p>Kontakt os</p>
+        </footer>
+
+        <div>
+            <img class="ig" src="images/ig.png" alt="IG ikon">
+            <img class="fb" src="images/fb.png" alt="FB ikon">
+        </div>
+
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $('#nav-icon3').click(function() {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+</body>
+</html>

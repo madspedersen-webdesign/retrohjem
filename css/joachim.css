@@ -1,0 +1,733 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation with flexbox mobile first*/
+
+#preheader {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 15%;
+}
+
+header {
+    width: 100%;
+    background-color: #7DADAD;
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+
+}
+
+#logo img {
+    width: 15%;
+    display: none;
+}
+
+#logo,
+#main-nav a {
+    color: white;
+}
+
+#main-nav {
+    height: 100%;
+    list-style: none;
+}
+
+#main-nav li {
+    display: block;
+    font-size: 6.5vw;
+    line-height: 8vw;
+}
+
+#main-nav a:hover {
+    color: white;
+}
+
+.active {
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+#some img {
+    width: 70%;
+    padding: 50% 0% 0% 0%;
+    margin-left: 30%;
+}
+
+#some {
+    display: flex;
+    justify-content: center;
+}
+
+#rhlogo {
+    width: 100%;
+    margin-left: 30%;
+}
+
+#desktop-menu {
+    display: none;
+}
+
+
+/* Kode fra Codepen lavet af Jesse Couch
+Link: https://codepen.io/designcouch/pen/Atyop*/
+#nav-icon3 {
+    width: 15vw;
+    height: 80vw;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 2%;
+    width: 80%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+    top: 0%;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 5%;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 10%;
+}
+
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+/* Kode fra Codepen lavet af Jesse Couch
+Link: https://codepen.io/designcouch/pen/Atyop*/
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+    header {
+        display: flex;
+        width: 80%;
+        position: fixed;
+        right: 0;
+
+    }
+
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+        width: 90%;
+        height: 100em;
+    }
+
+    #main-nav {
+        display: none;
+        padding: 10%;
+    }
+
+    #main-nav li {
+        text-align: left;
+        padding-top: 25%;
+
+    }
+
+    #main-nav li {
+        margin-right: -60%;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    #rhlogo {
+        width: 60%;
+    }
+}
+
+
+.accordion {
+    background-color: #7DADAD;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+    margin: 1% 0 0 0;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 20px;
+    background-color: #7DADAD;
+    color: white;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.section {
+    display: none;
+}
+
+.text1 {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 150%;
+    margin-bottom: 15%;
+}
+
+.text1 h2 {
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+#knap {
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+
+#knap a {
+    position: relative;
+    background-color: #996666;
+    text-decoration: none;
+    color: white;
+    padding: 5% 10%;
+    font-size: 20px;
+}
+
+#knap2 {
+    margin-left: 5%;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+#knap2 a {
+    position: relative;
+    background-color: #996666;
+    text-decoration: none;
+    color: white;
+    padding: 2% 6%;
+    font-size: 20px;
+}
+
+#inspi-tekst {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#inspi-tekst p {
+    font-size: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: grey;
+}
+
+.j-article {
+    width: 100%;
+}
+
+.j-section {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.j-h2 {
+    color: black;
+    margin: 1% 0 1% 0;
+}
+
+.j-p {
+    color: gray;
+    margin-bottom: 1%;
+}
+
+.j-li {
+    color: #669999;
+    margin: 1% 0 1% 0;
+}
+
+.j-knap {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.j-img {
+    width: 40%;
+}
+
+.j-billede2 {
+    width: 30%;
+}
+
+
+
+/*
+forside afsnit
+*/
+
+.mobile {
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: -30%;
+}
+
+.laptop {
+    display: none;
+    z-index: -1;
+}
+
+/*FOOTER - START*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #669999;
+    color: white;
+    margin-bottom: -40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.footer p {
+    padding-left: 5%;
+    font-size: 14px;
+}
+
+/*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
+
+.ig {
+    position: absolute;
+    width: 10%;
+    margin-left: 70%;
+    margin-top: 20%;
+
+
+}
+
+.fb {
+    position: absolute;
+    width: 10%;
+    margin-left: 85%;
+    margin-top: 20%;
+
+
+
+}
+
+/*FOOTER - SLUT*/
+
+@media only screen and (min-width: 768px) {
+
+    @media all and (min-width: 1024px) {
+
+        /*HEADER*/
+        header {
+            display: none;
+        }
+
+        #main-nav {
+            display: none;
+        }
+
+        label {
+            display: none;
+        }
+
+        #preheader {
+            display: none
+        }
+
+        #rhlogo {
+            display: none;
+        }
+
+        #desktop-menu {
+            display: flex;
+            width: 80%;
+            justify-content: space-evenly;
+            position: absolute;
+            right: 0%;
+            padding-top: 5%;
+            margin-top: -5%;
+        }
+
+        #desktop-menu li {
+            list-style-type: none;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 5%;
+        }
+
+
+        #desktop-menu a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #desktop-menu a:hover {
+            color: #669999;
+        }
+
+        .dropbtn {
+            font-size: 1.2rem;
+            border: none;
+        }
+
+        .dropbtn:hover {
+            color: black;
+        }
+
+        .dropdown {
+            display: inline-block;
+            font-size: 60%;
+            padding: 5%;
+        }
+
+        .dropdown img {
+            width: 100%;
+            padding: 10%;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            right: 0;
+            font-size: 1.2em;
+        }
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+
+        #sofa {
+            width: 180%;
+            margin-left: -30%;
+            margin-top: -10%;
+            margin-bottom: -40%;
+        }
+
+        .sofa {
+            margin-top: -30%;
+        }
+
+        /* Inspi */
+        .text1 {
+            text-align: center;
+            padding-left: 22%;
+            padding-right: 5%;
+            line-height: 150%;
+            margin-bottom: 8%;
+        }
+
+        .text1 h2 {
+            margin-bottom: 5%;
+            margin-top: 10%;
+            margin-left: -40%;
+        }
+
+        #knap {
+            margin-bottom: 5%;
+            margin-left: 43%;
+        }
+
+        #knap a {
+            position: relative;
+            background-color: #996666;
+            text-decoration: none;
+            color: white;
+            padding: 3% 8%;
+            font-size: 20px;
+        }
+
+        #knap2 {
+            margin-left: 5%;
+            margin-top: 5%;
+            text-decoration: none;
+        }
+
+        #knap2 a {
+            position: relative;
+            background-color: #996666;
+            text-decoration: none;
+            color: white;
+            padding: 1% 2%;
+            font-size: 20px;
+        }
+
+        #inspi-tekst {
+            margin-top: 10%;
+            text-align: center;
+        }
+
+        #inspi-tekst p {
+            font-size: 25px;
+            margin-left: 15%;
+            color: grey;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .laptop {
+            width: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            display: block;
+        }
+
+
+        article {
+            width: 100%;
+        }
+
+        section {
+            width: 90%;
+            margin: 2% 0 2% 10%;
+        }
+
+        h2 {
+            color: black;
+            margin-bottom: 5%;
+        }
+
+        ul {
+            width: 50%;
+        }
+
+        li {
+            color: cadetblue;
+            font-weight: 200;
+        }
+
+        p {
+            color: dimgray;
+            width: 60%;
+        }
+
+
+        .anmeldelser {
+            background-image: url("/eksamen-kode/images/markq.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 300px;
+        }
+
+        .knap {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        img {
+            width: 40%;
+        }
+
+        .billede2 {
+            width: 30%;
+        }
+
+        /*FOOTER - START*/
+        .footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #669999;
+            color: white;
+            margin-bottom: -90%;
+        }
+
+        .footer p {
+            padding-left: 5%;
+        }
+
+        /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
+
+        .ig {
+            position: absolute;
+            width: 10%;
+            margin-left: 70%;
+            margin-top: 75%;
+
+
+        }
+
+        .fb {
+            position: absolute;
+            width: 10%;
+            margin-left: 85%;
+            margin-top: 75%;
+        }
+
+        /*FOOTER - START*/
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #669999;
+            color: white;
+            margin-bottom: -40%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .footer p {
+            padding-left: 15%;
+            font-size: 20px;
+            color: white;
+        }
+
+        /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
+
+        .ig {
+            position: absolute;
+            width: 5%;
+            margin-left: 80%;
+            margin-top: 28%;
+
+
+        }
+
+        .fb {
+            position: absolute;
+            width: 5%;
+            margin-left: 90%;
+            margin-top: 28%;
+
+
+
+        }
+
+        /*FOOTER - SLUT*/
+
+
+
+    }

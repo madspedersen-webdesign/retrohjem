@@ -1,0 +1,776 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+#preheader {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #7DADAD;
+    padding: 15%;
+}
+
+header {
+    width: 100%;
+    background-color: #7DADAD;
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+
+}
+
+#logo img {
+    width: 15%;
+    display: none;
+}
+
+#logo,
+#main-nav a {
+    color: white;
+}
+
+#main-nav {
+    height: 100%;
+    list-style: none;
+}
+
+#main-nav li {
+    display: block;
+    font-size: 6.5vw;
+    line-height: 8vw;
+}
+
+#main-nav a:hover {
+    color: white;
+}
+
+.active {
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+#some img {
+    width: 70%;
+    padding: 50% 0% 0% 0%;
+    margin-left: 30%;
+}
+
+#some {
+    display: flex;
+    justify-content: center;
+}
+
+#rhlogo {
+    width: 100%;
+    margin-left: 30%;
+}
+
+#desktop-menu {
+    display: none;
+}
+
+
+/* Kode fra Codepen lavet af Jesse Couch
+Link: https://codepen.io/designcouch/pen/Atyop*/
+#nav-icon3 {
+    width: 15vw;
+    height: 80vw;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 2%;
+    width: 80%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+    top: 0%;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 5%;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 10%;
+}
+
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+/* Kode fra Codepen lavet af Jesse Couch
+Link: https://codepen.io/designcouch/pen/Atyop*/
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+    header {
+        display: flex;
+        width: 80%;
+        position: fixed;
+        right: 0;
+
+    }
+
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+        width: 90%;
+        height: 100em;
+    }
+
+    #main-nav {
+        display: none;
+        padding: 10%;
+    }
+
+    #main-nav li {
+        text-align: left;
+        padding-top: 25%;
+
+    }
+
+    #main-nav li {
+        margin-right: -60%;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    #rhlogo {
+        width: 60%;
+    }
+}
+
+
+/*FOOTER - START*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #669999;
+    color: white;
+    margin-bottom: -300%;
+}
+
+.footer p {
+    padding-left: 5%;
+}
+
+/*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
+
+.ig {
+    position: relative;
+    bottom: 0;
+    width: 8%;
+    padding-left: 80%;
+    margin: 5%;
+    display: inline-block;
+    margin-bottom: -290%;
+
+
+}
+
+.fb {
+    position: relative;
+    bottom: 0;
+    width: 8%;
+    padding-left: 70%;
+    margin: 5%;
+    display: inline-block;
+    margin-bottom: -290%;
+
+
+}
+
+/*FOOTER - SLUT*/
+
+
+/*KONTAKT OS SIDE - START*/
+h1 {
+
+    padding-left: 30%;
+}
+
+.maiken2 {
+
+    width: 90%;
+    padding-left: 5%;
+    padding-top: -20%;
+}
+
+.maiken {
+    display: none;
+}
+
+.farve {
+
+    background-color: #669999;
+}
+
+.flex {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+
+    padding-left: 22%;
+}
+
+.info1 {
+
+    padding-left: 30%;
+    color: white;
+    margin-top: 6%;
+}
+
+.info2 {
+
+    padding-left: 25%;
+    margin-top: -7%;
+    color: white;
+}
+
+.adresse {
+    margin-top: 2%;
+    padding-left: 40%;
+}
+
+.adresse2 {
+    padding-left: 14%;
+    margin-top: -4%;
+}
+
+.googlemap {
+    width: 100%;
+    padding-bottom: 45%;
+}
+
+
+/*KONTAKT OS SIDE - SLUT*/
+
+
+/*PRODUKT SIDE START*/
+.linebreak {
+    border-bottom: 1px solid black;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+wrapper > img {
+    display: flex;
+    width: 30%;
+    margin: 15%;
+    padding-left: 20%;
+    padding-top: -15%;
+    padding-bottom: -15%;
+}
+
+.m,
+.m1,
+.m2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    line-height: 150%;
+}
+
+.m3 {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    line-height: 150%;
+}
+
+
+.maiken5,
+.maiken6 {
+
+
+    display: none;
+}
+
+.se-mere {
+    margin-left: 30%;
+    background-color: lightblue;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 2% 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.se-mere2 {
+    margin-left: 30%;
+    background-color: lightblue;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 2% 5%;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 50%;
+}
+
+.linebreak-1 {
+    border-bottom: 1px solid black;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 50%;
+}
+
+/*PRODUKT SIDE SLUT*/
+
+/*WEB STARTER*/
+@media all and (min-width: 1024px) {
+
+    /*HEADER*/
+    header {
+        display: none;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+    #preheader {
+        display: none
+    }
+
+    #rhlogo {
+        display: none;
+    }
+
+    #desktop-menu {
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+        position: absolute;
+        right: 0%;
+        padding-top: 5%;
+        margin-top: -5%;
+    }
+
+    #desktop-menu li {
+        list-style-type: none;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 5%;
+    }
+
+
+    #desktop-menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #desktop-menu a:hover {
+        color: #669999;
+    }
+
+    .dropbtn {
+        font-size: 1.2rem;
+        border: none;
+    }
+
+    .dropbtn:hover {
+        color: black;
+    }
+
+    .dropdown {
+        display: inline-block;
+        font-size: 60%;
+        padding: 5%;
+    }
+
+    .dropdown img {
+        width: 100%;
+        padding: 10%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        right: 0;
+        font-size: 1.2em;
+    }
+
+    .dropdown-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+
+    #sofa {
+        width: 180%;
+        margin-left: -30%;
+        margin-top: -10%;
+        margin-bottom: -40%;
+    }
+
+    .sofa {
+        margin-top: -30%;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #669999;
+        color: white;
+        text-align: left;
+        margin-bottom: -20%;
+    }
+
+    /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
+
+    .ig {
+        position: relative;
+        bottom: 0;
+        width: 5%;
+        padding-left: 80%;
+        margin: 5%;
+        display: inline-block;
+        margin-bottom: -16%;
+
+
+    }
+
+    .fb {
+        position: relative;
+        bottom: 0;
+        width: 5%;
+        padding-left: 70%;
+        margin: 5%;
+        display: inline-block;
+        margin-bottom: -15%;
+    }
+
+    /*KONTAKT OS SIDE*/
+
+    .maiken {
+
+        width: 50%;
+        float: right;
+        padding-right: 1%;
+        display: block;
+
+    }
+
+    .maiken2 {
+
+        display: none;
+    }
+
+
+
+    .kontakt {
+
+        margin-left: -28%;
+        padding-top: 10%;
+
+
+    }
+
+
+    .farve {
+
+        background-color: white;
+    }
+
+
+    .info1 {
+
+        color: black;
+        margin-left: -25%;
+
+    }
+
+    .info2 {
+
+        color: black;
+        margin-left: -20%;
+        margin-top: 2%;
+
+    }
+
+
+    .adresse {
+
+        margin-left: -35%;
+
+    }
+
+    .adresse2 {
+
+        margin-left: -9%;
+        margin-bottom: -10%;
+        padding-top: 5%;
+
+    }
+
+    .googlemap {
+
+        width: 42%;
+        padding-top: 10%;
+        padding-left: 2%;
+        padding-bottom: 20%;
+
+    }
+
+    .info {
+        display: none;
+    }
+
+    /*KONTAKT OS SIDE SLUT */
+
+
+    /*PRODUKT SIDE START */
+
+
+
+    .grid {
+
+        display: grid;
+        width: 100%;
+        grid-gap: 5px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+
+            "l l m m m6 m6 m6 m6"
+            "s s m1 m1 m6 m6 m6 m6"
+            "m2 m2 m3 m3 m7 m7 m7 m7"
+            "st st m4 m4 m7 m7 m7 m7"
+
+
+    }
+
+    .lampe1 {
+
+        grid-area: l;
+        width: 60%;
+        margin-top: 50%;
+
+
+    }
+
+    .m {
+
+        grid-area: m;
+        width: 100%;
+        margin-top: 50%;
+
+
+    }
+
+    .sofa1 {
+
+        grid-area: s;
+        width: 60%;
+
+
+    }
+
+    .m1 {
+
+        grid-area: m1;
+        width: 100%;
+        padding-top: 20%;
+
+
+    }
+
+    .skaenk {
+
+        grid-area: m2;
+        width: 60%;
+
+
+    }
+
+    .m2 {
+
+
+        grid-area: m3;
+        width: 100%;
+        padding-top: 20%;
+
+
+    }
+
+    .stol {
+
+        grid-area: st;
+        width: 60%;
+
+    }
+
+    .m3 {
+
+        grid-area: m4;
+        width: 100%;
+        padding-top: 20%;
+        margin-bottom: 50%;
+
+
+    }
+
+
+    .linebreak {
+
+        display: none;
+    }
+
+    wrapper > img {
+        display: flex;
+        width: 30%;
+        margin: 15%;
+        padding-left: 0%;
+        padding-top: -15%;
+        padding-bottom: -15%;
+    }
+
+
+    .maiken5 {
+        grid-area: m6;
+        width: 80%;
+        display: block;
+
+    }
+
+    .maiken6 {
+
+        grid-area: m7;
+        width: 80%;
+        display: block;
+
+    }
+
+    .se-mere {
+        height: 40px;
+        width: 40%;
+        background-color: white;
+        margin-left: 30%;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        color: white;
+    }
+
+    .se-mere2 {
+        height: 40px;
+        width: 40%;
+        background-color: white;
+        margin-bottom: 50%;
+        margin-left: 30%;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .linebreak-1 {
+    border-bottom: 1px solid white;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 50%;
+}
+
+}
