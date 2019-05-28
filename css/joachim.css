@@ -469,7 +469,9 @@ forside afsnit
         #desktop-menu a:hover {
             color: #669999;
         }
-
+        
+/* Kode taget fra w3schools
+https://www.w3schools.com/howto/howto_css_dropdown.asp*/
         .dropbtn {
             font-size: 1.2rem;
             border: none;
@@ -514,6 +516,8 @@ forside afsnit
         .dropdown:hover .dropdown-content {
             display: flex;
         }
+        /* Kode taget fra w3schools
+https://www.w3schools.com/howto/howto_css_dropdown.asp*/
 
         #sofa {
             width: 180%;
