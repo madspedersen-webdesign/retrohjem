@@ -321,7 +321,6 @@ h1 {
     padding-bottom: 45%;
 }
 
-
 /*KONTAKT OS SIDE - SLUT*/
 
 
@@ -496,6 +495,7 @@ https://www.w3schools.com/howto/howto_css_dropdown.asp*/
     .dropdown:hover .dropdown-content {
         display: flex;
     }
+
     /* Kode taget fra w3schools
 https://www.w3schools.com/howto/howto_css_dropdown.asp*/
 
@@ -616,7 +616,6 @@ https://www.w3schools.com/howto/howto_css_dropdown.asp*/
         padding-top: 10%;
         padding-left: 2%;
         padding-bottom: 20%;
-
     }
 
     .info {
@@ -768,13 +767,13 @@ https://www.w3schools.com/howto/howto_css_dropdown.asp*/
         font-size: 20px;
         color: white;
     }
-    
+
     .linebreak-1 {
-    border-bottom: 1px solid white;
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 7%;
-    margin-bottom: 50%;
-}
+        border-bottom: 1px solid white;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 7%;
+        margin-bottom: 50%;
+    }
 
 }
